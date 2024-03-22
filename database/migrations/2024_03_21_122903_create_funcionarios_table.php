@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nome');
             $table->string('email');
-            $table->decimal('salario', 10, 2); // 10 dígitos no total, 2 após a vírgula
+            $table->float('salario');
             $table->timestamps();
         });
     }

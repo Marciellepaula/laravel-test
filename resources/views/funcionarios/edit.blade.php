@@ -28,7 +28,7 @@
                             name="salario" required>
                     </div>
                     <div class="form-group mt-2 d-flex justify-content-end gap-2">
-                        <a href="{{ route('dashboard') }}" class="btn btn-danger">Cancelar</a>
+                        <a href="{{ route('dashboard') }}" class="btn btn-danger]">Cancelar</a>
                         <button type="submit" class="btn btn-primary">Editar</button>
                     </div>
                 </form>

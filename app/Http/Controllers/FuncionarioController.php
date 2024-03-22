@@ -72,7 +72,8 @@ class FuncionarioController extends Controller
      */
     public function show(string $id)
     {
-        return view('funcionarios.show');
+        $funcionario = Funcionario::find($id);
+        return view('funcionarios.show', compact('funcionario'));
     }
 
     /**

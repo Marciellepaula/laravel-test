@@ -71,7 +71,8 @@
                         <tbody>
                             @forelse ($funcionarios as $funcionario)
                                 <tr>
-                                    <td>{{ $loop->iteration * $funcionarios->currentPage() }}</td>
+                                    <td>{{ $loop->index + $funcionarios->firstItem() }}
+                                    </td>
                                     <td>{{ $funcionario->nome }}</td>
                                     <td>{{ $funcionario->email }}</td>
                                     <td>R$ {{ number_format($funcionario->salario, 2, ',', '.') }}</td>
